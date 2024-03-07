@@ -14,6 +14,14 @@
 - [Cors](https://www.npmjs.com/package/cors)
 - [Cors types](https://www.npmjs.com/package/@types/cors)
 
+## Routes
+
+- /random :- GET A RANDOM POKEMON
+- /pokemon_okeke :- GET ALL POKEMON
+- /pokemon_okeke/:id :- GET A SPECIFIC POKEMON
+- /pokemon_okeke :- POST A POKEMON
+- /pokemon_okeke/:id :- DELETE A POKEMON
+
 ## Live Demo
 
-Please [click](https://gaugecash-wallet.vercel.app/) for the live demo.
+This is the API LINK [click](https://my-pokemon-api.vercel.app/) hosted on Vercel using a few tweaks.
