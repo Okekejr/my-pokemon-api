@@ -16,6 +16,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 //1. GET a random pokemon
 app.get("/pokemon_okeke/random", (req: Request, res: Response) => {
@@ -47,16 +48,14 @@ app.get("/pokemon_okeke/:id", (req: Request, res: Response) => {
 
 //4. POST a pokemon
 app.post("/pokemon_okeke", (req: Request, res: Response) => {
-  const { name, image, description, card } = req.body;
-
   const newID = pokemons.results.length + 1;
 
   const newPokemon: pokemonDT = {
     id: newID,
-    name: name,
-    image: image,
-    description: description,
-    card: card,
+    name: req.body.name,
+    image: req.body.image,
+    description: req.body.description,
+    card: req.body.card,
   };
 
   pokemons.results.push(newPokemon);
