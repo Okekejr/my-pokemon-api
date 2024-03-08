@@ -53,10 +53,10 @@ app.post("/pokemon_okeke", (req: Request, res: Response) => {
 
   const newPokemon: pokemonDT = {
     id: newID,
-    name,
-    image,
-    description,
-    card,
+    name: name,
+    image: image,
+    description: description,
+    card: card,
   };
 
   pokemons.results.push(newPokemon);
