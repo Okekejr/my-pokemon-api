@@ -22,6 +22,6 @@
 - /pokemon_okeke :- POST A POKEMON
 - /pokemon_okeke/:id :- DELETE A POKEMON
 
-## Live Demo
+## API LINK
 
-This is the API LINK [click](https://my-pokemon-api.vercel.app/) hosted on Vercel using a few tweaks.
+This is the API LINK (https://my-pokemon-api.vercel.app/) hosted on Vercel using a few tweaks.
